@@ -1,13 +1,13 @@
 {
-    "name": "template-repo",
+    "name": "Weatheria",
     "version": "1.0.0",
     "type": "module",
-    "description": "This is a template repo made to ease the setup that is required while building the projects.",
+    "description": "A weather application built with JavaScript and a weather API.",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "webpack --config webpack.prod.js",
-        "dev": "webpack serve --open --config webpack.dev.js",
+        "build": "webpack --config webpack.prod.cjs",
+        "dev": "webpack serve --open --config webpack.dev.cjs",
         "deploy": "git subtree push --prefix dist origin gh-pages",
         "prepare": "husky"
     },
