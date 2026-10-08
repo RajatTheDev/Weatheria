@@ -36,5 +36,6 @@ export function updateInfo (address, temp, feels_like, humidity, weather, windsp
     feels_like_field.textContent = `Feels Like ${feels_like}°C`;
     humidity_field.textContent = `${humidity}%`;
     windspeed_field.textContent = `${windspeed} km/h`;
-    weather_icon.src = iconMap[weather] || cloudy;
+    weather_icon.innerHTML = `
+    <img src="${iconMap[weather] || cloudy}" alt="${weather}">`;
 }

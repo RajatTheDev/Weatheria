@@ -11,12 +11,18 @@
         <input type="text" placeholder="Enter your city..." name="weather-search" id="weather-search">
         <button type="submit">Enter</button>
     </form>
+
+    <div id="loading">
+        <div class="spinner"></div>
+        <p>Loading weather...</p>
+    </div>
+
     <div class="weather-card">
         <div class="card-header">
             <div id="address"></div>
         </div>
         <div class="card-main">
-            <div class="icon"><img src="images/clear.svg" alt="weather-icon" id="weather-icon"></div>
+            <div class="icon" id="weather-icon"></div>
             <div id="main-info">
                 <div id="temp"></div>
                 <div id="weather"></div>
