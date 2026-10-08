@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(219, 219, 219);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: rgb(54, 54, 54);
+    font-size: 1.3rem;
+}
+
+h1 {
+    margin: 40px 0 10px 0;
+}
+
+input:focus, input:hover, button:hover {
+    outline: none;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+input, button {
+    font-size: 1.1rem;
+    padding: 8px;
+    border-radius: 8px;
+    border: 0;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    padding: 8px 20px;
+    background-color: rgb(77, 224, 19);
+}
+
+form {
+    margin-bottom: 50px;
+}
+
+.weather-card {
+    font-weight: 650;
+    margin: 0 auto;
+    padding: 35px 25px 25px 25px;
+    width: fit-content;
+    border: 0px solid rgba(0, 0, 0, 0.445);
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+}
+
+.weather-card:hover {
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.445);
+}
+
+.card-header, .card-main {
+    text-align: left;
+}
+
+#weather-icon img {
+    width: 110px;
+}
+
+#feels-like {
+    color: rgb(87, 87, 87);
+}
+
+#humidity-icon img, #wind-icon img {
+    width: 100px;
+}
+
+.card-footer {
+    margin-top: -30px;
+}
+
+#weather-icon {
+    margin-top: -7px;
+}
+
+#humidity, #windspeed {
+    margin-top: -38px;
+}
+
+/* Text sizes */
+
+#address {
+    font-size: 1.4rem;
+}
+
+#temp, #weather {
+    font-size: 1.6rem;
+}
+
+/* Grid Work */
+
+.weather-card {
+    display: grid;
+    gap: 18px;
+}
+
+.card-main {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 18px;
+}
+
+.card-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}

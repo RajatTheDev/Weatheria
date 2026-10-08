@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weatheria</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js" defer></script>
 </head>
 <body>
     <h1>Weatheria</h1>
+    <form action="search" method="get" class="search">
+        <input type="text" placeholder="Enter your city..." name="weather-search" id="weather-search">
+        <button type="submit">Enter</button>
+    </form>
+    <div class="weather-card">
+        <div class="card-header">
+            <div id="address"></div>
+        </div>
+        <div class="card-main">
+            <div class="icon"><img src="images/clear.svg" alt="weather-icon" id="weather-icon"></div>
+            <div id="main-info">
+                <div id="temp"></div>
+                <div id="weather"></div>
+                <div id="feels-like"></div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <div id="humidity-icon"><img src="images/humidity.svg" alt="humidity-icon"></div>
+            <div id="wind-icon"><img src="images/wind.svg" alt="wind-icon"></div>
+            <div id="humidity"></div>
+            <div id="windspeed"></div>
+        </div>
+    </div>
 </body>
 </html>
